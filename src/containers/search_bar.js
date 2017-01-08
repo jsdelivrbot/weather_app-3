@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchWeather } from '../actions/index'
+import { fetchWeather } from '../actions/index';
 
 
 class SearchBar extends Component {
@@ -17,7 +17,6 @@ class SearchBar extends Component {
   onInputChange(event){
     //event.target.value is not React; it's just vanilla JS
     this.setState({ term: event.target.value})
-
   }
 
   //you always need to prevent default with forms in React
